@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>factorial</title>
+</head>
+<body>
+<script type="text/javascript">
+//var x=parseInt(document.getElementById('num').value);
+function fact()
+{
+var x=parseInt(document.getElementById('num').value);
+var o=1;
+//var x=3;
+if(x==0)
+{
+document.getElementById('output').value= 1;
+}
+/*else if(x<0)
+{
+document.getElementById('output').value= "invalid input";
+}
+*/
+else{
+for(i=1;i<=x;i++)
+{
+o=o*i;
+}
+//var o= x*fact(x-1);
+//document.write(o);
+document.getElementById('output').value= o;
+}
+
+
+
+/*function add(){
+var x=parseInt(document.getElementById('num').value);
+var a= x + x ;
+//document.write(a);
+document.getElementById('output').value= a;
+*/
+}
+
+</script>
+<form>
+<p><h3>FACTORIAL OF GIVEN NUMBER</h3></p>
+<p>Enter number: <input type="number" id="num" maxlength="3" value="0">
+</p>
+<br />
+<p>
+<input type="button" value="find factorial" onclick="fact()">
+</p>
+<br />
+factorial is:<input type="textbox" id="output">
+
+</form>
+
+</body>
+</html>
